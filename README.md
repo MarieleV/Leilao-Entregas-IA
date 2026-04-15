@@ -77,6 +77,21 @@ Para problemas de pequena escala, o **A\*** é consideravelmente superior em tem
 
 ### 2.3 Gráficos Comparativos
 
+Abaixo, os gráficos gerados pelo `matplotlib` detalhando a execução e a escalabilidade das abordagens:
+
+<p align="center">
+  <img src="projeto/grafico_comparacao.png" alt="Comparação de Desempenho" width="85%"/>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="projeto/grafico_escalabilidade.png" alt="Escalabilidade dos Algoritmos" width="85%"/>
+</p>
+
+* **Gráfico 1:** Comparação direta do tempo de execução e lucro no cenário base.
+* **Gráfico 2:** Curva de escalabilidade mostrando o comportamento dos algoritmos à medida que o volume de entregas cresce.
+
 ---
 
 ## 3. Interface Visual (Pygame)
