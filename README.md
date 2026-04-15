@@ -122,7 +122,7 @@ No Pygame: pressione `[1]` ou `[2]` para calcular a rota e `[ESPAÇO]` para anim
 ## 5. Como Executar
 
 ### Pré-requisitos
-- Python v3.12 (É utlizado o `lib pygame`, ele ainda não tem um pacote pré-compilado compatível com a versão 3.14)
+- Python v3.12 (Utilizei o `lib pygame`, mas ele ainda não tem um pacote pré-compilado compatível com a versão 3.14)
 - Pip (Gerenciador de pacotes)
 
 ### Instalação e Uso
