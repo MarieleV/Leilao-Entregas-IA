@@ -96,9 +96,49 @@ Abaixo, os gráficos gerados pelo `matplotlib` detalhando a execução e a escal
 
 ## 3. Interface Visual (Pygame)
 
+### 3.1 Descrição e Funcionalidades da Interface
+
+| Funcionalidade | Descrição |
+| :--- | :--- |
+| **Visualização do Grafo** | Exibição interativa em tempo real das conexões com nós e arestas. |
+| **Painel de Entregas** | Consulta das entregas disponíveis, detalhando seus respectivos horários e bônus. |
+| **Seleção de Algoritmo** | Alternância entre os métodos de roteamento: **A*** e **Algoritmo Genético**. |
+| **Animação do Trajeto** | Simulação visual do entregador percorrendo a rota ótima calculada. |
+| **Modificação Interativa** | Painel lateral para ajuste dinâmico de parâmetros:<br><ul><li>Adicionar/remover conexões entre nós</li><li>Adicionar/remover entregas</li><li>Ajustar bônus e horários</li><li>Recarregar dados a partir dos arquivos originais</li></ul> |
+| **Controle de Execução** | Comandos para pausar ou retomar a simulação a qualquer momento. |
+
+---
+
+### 3.2 Manual de Usabilidade
+
+<p align="center">
+  <img src="projeto/tela-pygame.png" alt="Interface Visual PyGame" width="85%"/>
+</p>
+
 O usuário pode interagir com o ambiente para testar a resiliência dos algoritmos frente a mudanças súbitas na lista de entregas.
 
 No Pygame: pressione `[1]` ou `[2]` para calcular a rota e `[ESPAÇO]` para animar o entregador.
+
+Controles:
+
+    `[ESPAÇO]`  — Iniciar/Pausar animação
+    
+    `[1]`       — Rodar com A* (Versão 1)
+    
+    `[2]`       — Rodar com Algoritmo Genético (Versão 2)
+    
+    `[R]`       — Reiniciar simulação
+    
+    `[P]`       — Abrir/fechar painel de parâmetros
+    
+    `[+] / [-]` — Ajustar velocidade de animação
+    
+    `[ESC]`     — Sair
+
+---
+
+### 3.3 Como Rodar
+
 ```bash
     python simulacao_pygame.py --simulacao
 ```
@@ -122,7 +162,7 @@ No Pygame: pressione `[1]` ou `[2]` para calcular a rota e `[ESPAÇO]` para anim
 ## 5. Como Executar
 
 ### Pré-requisitos
-- Python v3.12 (Utilizei o `lib pygame`, mas ele ainda não tem um pacote pré-compilado compatível com a versão 3.14)
+- Python v3.12 (Utilizei o `lib pygame`, e ele não tem um pacote pré-compilado compatível com a versão 3.14)
 - Pip (Gerenciador de pacotes)
 
 ### Instalação e Uso
