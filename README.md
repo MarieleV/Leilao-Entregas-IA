@@ -160,15 +160,15 @@ Controles:
 
 ## 5. Como Executar
 
-### Pré-requisitos
+### 5.1 Pré-requisitos
 - Python v3.12 (Utilizei o `lib pygame`, e ele não tem um pacote pré-compilado compatível com a versão 3.14)
 - Pip (Gerenciador de pacotes)
 
-### Instalação e Uso
+### 5.2 Instalação e Uso
 ```bash
    git clone [https://github.com/usuario/leilao-entregas.git](https://github.com/usuario/leilao-entregas.git)
 ```
-### Como rodar
+### 5.3 Como rodar
 ```bash
   pip install matplotlib pygame
 
