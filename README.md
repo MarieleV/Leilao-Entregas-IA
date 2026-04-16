@@ -115,7 +115,6 @@ Abaixo, os gráficos gerados pelo `matplotlib` detalhando a execução e a escal
   <img src="projeto/tela-pygame.png" alt="Interface Visual PyGame" width="85%"/>
 </p>
 
-O usuário pode interagir com o ambiente para testar a resiliência dos algoritmos frente a mudanças súbitas na lista de entregas.
 
 No Pygame: pressione `[1]` ou `[2]` para calcular a rota e `[ESPAÇO]` para animar o entregador.
 
