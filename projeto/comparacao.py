@@ -1,5 +1,5 @@
 """
-Comparação de Desempenho — Versão 1 (A*) vs Versão 2 (Algoritmo Genético)
+Comparação de Desempenho | Versão 1 (A*) vs Versão 2 (Algoritmo Genético)
 ==========================================================================
 Gera gráficos comparativos de:
     1. Lucro (bônus) obtido por cada algoritmo
@@ -20,10 +20,6 @@ from modelos import GrafoConexoes, Entrega, ler_conexoes, ler_entregas
 from versao1_a_estrela import busca_a_estrela
 from versao2_genetico import algoritmo_genetico
 
-
-# ---------------------------------------------------------------------------
-# Paleta de cores e estilo
-# ---------------------------------------------------------------------------
 
 COR_A_ESTRELA  = '#2196F3'   # Azul
 COR_GENETICO   = '#FF5722'   # Laranja-vermelho
@@ -98,7 +94,7 @@ def grafico_comparacao_basico(
 ):
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
     fig.suptitle('Leilão de Entregas — Comparação A* vs Algoritmo Genético',
-                 color=COR_TEXTO, fontsize=15, fontweight='bold', y=1.02)
+                    color=COR_TEXTO, fontsize=15, fontweight='bold', y=1.02)
 
     # --- Gráfico 1a: Bônus obtido ---
     ax = axes[0]
@@ -139,7 +135,7 @@ def grafico_comparacao_basico(
     geracoes = list(range(1, len(historico_ag) + 1))
     ax.plot(geracoes, historico_ag, color=COR_GENETICO, linewidth=2, label='AG')
     ax.axhline(y=lucro_a, color=COR_A_ESTRELA, linestyle='--',
-               linewidth=1.5, label=f'A* (ótimo = {lucro_a})')
+                linewidth=1.5, label=f'A* (ótimo = {lucro_a})')
     ax.fill_between(geracoes, historico_ag, alpha=0.15, color=COR_GENETICO)
     ax.set_title('Convergência — Algoritmo Genético')
     ax.set_xlabel('Geração')
@@ -183,9 +179,9 @@ def grafico_escalabilidade():
 
         t0 = time.perf_counter()
         _, lb, _ = algoritmo_genetico(grafo, entregas,
-                                       tamanho_populacao=60,
-                                       num_geracoes=150,
-                                       semente=42)
+                                        tamanho_populacao=60,
+                                        num_geracoes=150,
+                                        semente=42)
         t1 = time.perf_counter()
         tempos_b.append((t1 - t0) * 1000)
         lucros_b.append(lb)
@@ -193,7 +189,7 @@ def grafico_escalabilidade():
 
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     fig.suptitle('Escalabilidade — Nº de Entregas',
-                 color=COR_TEXTO, fontsize=14, fontweight='bold')
+                    color=COR_TEXTO, fontsize=14, fontweight='bold')
 
     ax = axes[0]
     ax.plot(tamanhos, tempos_a, 'o-', color=COR_A_ESTRELA,
