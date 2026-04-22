@@ -20,7 +20,7 @@
 
 ### 1.1 O Problema do Leilão de Entregas
 
-No setor de logística de última milha (*last-mile delivery*), o desafio não consiste apenas em encontrar o caminho mais curto, mas em selecionar a combinação de entregas que maximize o lucro (bônus) dentro de restrições de tempo e conexões. 
+No setor de logística de uma empresa de delivery (*last-mile delivery*), o desafio não consiste apenas em encontrar o caminho mais curto, mas em selecionar a combinação de entregas que maximize o lucro (bônus) dentro de restrições de tempo e conexões. 
 
 O projeto aborda um cenário onde o sistema deve:
 - Processar grafos de conexões entre pontos de entrega.
